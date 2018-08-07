@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import WeatherIcon from 'react-icons-weather';
+import '../styles/forecast-summary.scss';
 
 const ForecastSummary = props => (
   <div className="forecast-summary">

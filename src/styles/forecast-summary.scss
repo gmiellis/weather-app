@@ -1,0 +1,58 @@
+.forecast-summary {
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.summary-icon {
+  font-size: 3em;
+  margin: auto;
+  padding: 15px;
+}
+
+.summary-temperature {
+  margin: auto;
+  font-size: 12px;
+  padding: 5px;
+
+}
+
+.summary-description {
+  margin: auto;
+  padding: 10px;
+
+}
+
+.summary-date {
+  margin: auto;
+}
+
+.deetsButtons {
+  padding-top: 10px;
+  margin: auto;
+	-moz-box-shadow:inset -2px 6px 13px 7px #ffffff;
+	-webkit-box-shadow:inset -2px 6px 13px 7px #ffffff;
+	box-shadow:inset -2px 6px 13px 7px #ffffff;
+	background-color:transparent;
+	-moz-border-radius:34px;
+	-webkit-border-radius:34px;
+	border-radius:34px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#323131;
+	font-family:Georgia;
+	font-size:10px;
+	font-weight:bold;
+	padding:4px 4px;
+	text-decoration:none;
+}
+.deetsButtons:hover {
+	background-color:transparent;
+}
+.deetsButtons:active {
+	position:relative;
+	top:1px;
+}

@@ -40,11 +40,14 @@ class App extends React.Component {
   handleSearchLocation(searchLocation) {
     axios.get(`http://mcr-codes-weather.herokuapp.com/forecast?city=${searchLocation}`).
       then((response) => {
+        console.log(response);
         this.setState({
           forecasts: response.data.forecasts,
           location: response.data.location,
           selectedDate: response.data.forecasts[0].date,
         });
+      }).catch(() => {
+        alert('Please enter a valid UK city');
       });
   }
 

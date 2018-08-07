@@ -1,39 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import '../styles/forecast-details.scss';
 
 const ForecastDetails = props => (
 
   <div className="forecast-details">
-    <div className="forecast-details-date">
-      <span>
-        {moment(props.forecast.date).format('ddd Do MMM')}
-      </span>
-    </div>
-    <div className="forecast-details-info">
-      <span>
-        Max Temp: {props.forecast.temperature.max}&deg;c
-      </span>
-    </div>
-    <div className="forecast-details-info">
-      <span>
-        Min Temp: {props.forecast.temperature.min}&deg;c
-      </span>
-    </div>
-    <div className="forecast-details-info">
-      <span>
-        Humidity: {props.forecast.humidity}%
-      </span>
-    </div>
-    <div className="forecast-details-info">
-      <span>
-        Wind Speed: {props.forecast.wind.speed}mph
-      </span>
-    </div>
-    <div className="forecast-details-info">
-      <span>
-        Wind Direction: {props.forecast.wind.direction}&#8595;
-      </span>
+    <div className="forecastdeetscontainer">
+      <div className="forecast-details-date">
+        <span>
+          <b>{moment(props.forecast.date).format('ddd Do MMM')}</b>
+        </span>
+      </div>
+      <div className="forecast-details-info">
+        <span>
+          Max Temp: {props.forecast.temperature.max}&deg;c
+        </span>
+      </div>
+      <div className="forecast-details-info">
+        <span>
+          Min Temp: {props.forecast.temperature.min}&deg;c
+        </span>
+      </div>
+      <div className="forecast-details-info">
+        <span>
+          Humidity: {props.forecast.humidity}%
+        </span>
+      </div>
+      <div className="forecast-details-info">
+        <span>
+          Wind Speed: {props.forecast.wind.speed} mph
+        </span>
+      </div>
+      <div className="forecast-details-info">
+        <span>
+          Wind Direction: {props.forecast.wind.direction}&#8595;
+        </span>
+      </div>
     </div>
   </div>
 );

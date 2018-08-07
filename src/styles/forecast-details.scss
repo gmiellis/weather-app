@@ -1,0 +1,20 @@
+.forecast-details {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forecastdeetscontainer {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 25px;
+}
+
+.forecast-details-info {
+  margin: 5px;
+}
